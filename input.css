@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 @layer components {
-    .active {
+    .activeFilter {
         @apply text-blue-500
+    }
+    .task-title.complete {
+        @apply line-through opacity-20 dark:text-[#6D6F84] dark:opacity-60
+    }
+    .task-title {
+        @apply text-[#4B4C57] dark:text-[#C3C5DC]
+    }
+    .check-box.checked-bg {
+        @apply bg-gradient-to-br from-[#6EBEF9] to-[#9D72DE] border-none
+    }
+    .check-box {
+        @apply border border-gray-300 dark:border-gray-600
     }
 }
